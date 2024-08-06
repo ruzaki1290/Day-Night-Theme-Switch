@@ -13,11 +13,14 @@ body {
    align-items: center;
    height: 100vh;
    margin: 0;
+
+   background-color: var(--background-color);
+   color: var(--text-color);
 }
 
 body.dark {
    --accent-color: #D0D066;
-   --backgroud-color: #333;
+   --background-color: #333;
    --text-color: #fff;
 }
 
