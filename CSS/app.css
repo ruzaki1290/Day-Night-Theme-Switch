@@ -1,11 +1,18 @@
 body {
+   --accent-color: #ff4500;
+   --backgroud-color: #fff;
+   --text-color: #111;
+   --button-text-color: #fff;
+   
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    height: 100vh;
+   margin: 0;
 }
 
 body.dark {
 
 }
+
