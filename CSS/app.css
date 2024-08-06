@@ -2,8 +2,11 @@ body {
    --accent-color: #ff4500;
    --backgroud-color: #fff;
    --text-color: #111;
-   --button-text-color: #fff;
-   
+   /* Background color equals to text color */
+   --button-text-color: var(--backgroud-color);
+   /* How fast theme switches from dark to light */
+   --transition-delay: 1s;
+
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -13,6 +16,8 @@ body {
 }
 
 body.dark {
-
+   --accent-color: #D0D066;
+   --backgroud-color: #333;
+   --text-color: #fff;
 }
 
