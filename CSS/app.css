@@ -24,3 +24,26 @@ body.dark {
    --text-color: #fff;
 }
 
+.title {
+   margin: 0;
+   margin-bottom: .5rem;
+}
+
+.theme-switch-btn {
+   display: flex;
+   width: 250px;
+   height: 75px;
+   font-size: 1.6em;
+   background-color: var(--accent-color);
+   color: var(--button-text-color);
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.theme-icon {
+   width: 48px;
+   height: auto;
+   padding-right: 5px;
+}
+
