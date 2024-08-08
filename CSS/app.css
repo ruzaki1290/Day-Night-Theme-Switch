@@ -33,12 +33,29 @@ body.dark {
    display: flex;
    width: 250px;
    height: 75px;
-   font-size: 1.6em;
+   border: none;
+   font-size: 1.4em;
+   padding: .5em .5em;
+   border-radius: 8px;
    background-color: var(--accent-color);
+   /* Applies transition effect to button */
+   transition: var(--transition-delay);
+   /* 
+   This property will make everything transition in all directions in and out;
+   it also makes color ease in and ease out(transition) more smoothly
+    */
+   transform: scale(1);
    color: var(--button-text-color);
    justify-content: center;
    align-items: center;
    cursor: pointer;
+}
+
+.theme-switch-btn:hover,
+.theme-switch-btn:focus {
+   /* Enlarges the button */
+   transform: scale(1.1);
+   font-size: 1.5em;
 }
 
 .theme-icon {
