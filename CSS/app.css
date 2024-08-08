@@ -19,12 +19,22 @@ body {
    transition: var(--transition-delay);
    background-color: var(--background-color);
    color: var(--text-color);
+   /* 
+   .day-night-container is larger than entire
+   screen height and it creates a scroll bar.
+   This property helps to avoid this issue
+   */
+   overflow: hidden;
 }
 
 body.dark {
    --accent-color: #D0D066;
    --background-color: #333;
+   --button-text-color: #333;
    --text-color: #fff;
+   .sun-btn, .moon-btn {
+      color: #fff;
+   }
 }
 
 .title {
@@ -84,4 +94,6 @@ body.dark {
 .day-night-container {
    position: absolute;
    top: 0;
+   /* vmin selects 200 min width or height in view */
+   height: 200vmin;
 }
