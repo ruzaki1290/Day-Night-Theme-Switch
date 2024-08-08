@@ -1,4 +1,10 @@
 body {
+   margin: 0;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    --accent-color: #ff4500;
    --backgroud-color: #fff;
    --text-color: #111;
@@ -6,14 +12,11 @@ body {
    --button-text-color: var(--backgroud-color);
    /* How fast theme switches from dark to light */
    --transition-delay: 1s;
-
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   margin: 0;
-
+   /* 
+   Colors nicely fade in and out of each other, 
+   when toggling between light and dark themes
+   */
+   transition: var(--transition-delay);
    background-color: var(--background-color);
    color: var(--text-color);
 }
