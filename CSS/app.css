@@ -67,3 +67,21 @@ body.dark {
    padding-right: 5px;
 }
 
+.sun-btn {
+   width: 75px;
+   height: auto;
+   background: none;
+   border: none;
+}
+
+.moon-btn {
+   width: 75px;
+   height: auto;
+   background: none;
+   border: none;
+}
+
+.day-night-container {
+   position: absolute;
+   top: 0;
+}
