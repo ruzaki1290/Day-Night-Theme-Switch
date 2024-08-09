@@ -92,9 +92,13 @@ body.dark {
 }
 
 .day-night-container {
-   --rotation: 0;
+   display: flex;
    position: absolute;
+   justify-content: center;
+   align-items: center;
    top: 0;
+   --rotation: 0;
+   pointer-events: none;
    /* vmin selects 200 min width or height in view */
    height: 200vmin;
    /* rotates the sun and moon */
@@ -109,6 +113,18 @@ body.dark {
    top: 5%;
 }
 
+/* makes the sun disappear in the dark */
+.dark .sun-btn {
+   opacity: 0;
+}
+
+/* makes the moon disappear in the light */
 .moon-btn {
    bottom: 5%;
+   opacity: 0;
+}
+
+/* makes the moon appear in the dark */
+.dark .moon-btn {
+   opacity: 1;
 }
