@@ -92,8 +92,23 @@ body.dark {
 }
 
 .day-night-container {
+   --rotation: 0;
    position: absolute;
    top: 0;
    /* vmin selects 200 min width or height in view */
    height: 200vmin;
+   /* rotates the sun and moon */
+   transform: rotate(var(--rotation));
+}
+
+.sun-btn, .moon-btn {
+   position: absolute;
+}
+
+.sun-btn {
+   top: 5%;
+}
+
+.moon-btn {
+   bottom: 5%;
 }
