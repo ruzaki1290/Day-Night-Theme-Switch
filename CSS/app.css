@@ -102,11 +102,20 @@ body.dark {
    /* vmin selects 200 min width or height in view */
    height: 200vmin;
    /* rotates the sun and moon */
-   transform: rotate(var(--rotation));
+   transform: rotate(calc(var(--rotation) * 1deg));
+   transition: transform var(--transition-delay);
 }
+
+/* .dark .day-night-container {
+   --rotation: 180deg;
+} */
 
 .sun-btn, .moon-btn {
    position: absolute;
+   transition: opacity, fill, var(--transition-delay);
+   width: 75px;
+   height: 75px;
+   fill: var(--accent-color);
 }
 
 .sun-btn {
@@ -122,6 +131,7 @@ body.dark {
 .moon-btn {
    bottom: 5%;
    opacity: 0;
+   transform: rotate(180deg);
 }
 
 /* makes the moon appear in the dark */
